@@ -1,0 +1,31 @@
+.nav__header {
+    background-color: #00a8b5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.nav__header p {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.nav__navbar {
+    background-color: #00a8b5;
+    overflow: hidden;
+}
+
+.nav__navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav__navbar a:hover {
+    color: #ff6b6b;
+}

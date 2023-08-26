@@ -1,0 +1,33 @@
+.home {
+    padding: 20px;
+    text-align: center;
+}
+
+.home__content h1{
+    color: #ffd100;
+    font-size: 36px;
+}
+
+.home__content p{
+    color: #333333;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.btn {
+    background-color: #ffd100;
+    color:#333333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
