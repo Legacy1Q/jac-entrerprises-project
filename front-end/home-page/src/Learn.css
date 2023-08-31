@@ -1,0 +1,26 @@
+.learn {
+    padding: 20px;
+    text-align: center;
+}
+
+.learn__content h1{
+    color: #ffd100;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.learn__content p{
+    color: #333333;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Image */
+.learn__row img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}

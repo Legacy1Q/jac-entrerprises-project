@@ -9,12 +9,11 @@ function Nav() {
         <p>Explore, Learn, and Play with Us!</p>
       </div>
       <div className='nav__navbar'>
-        <a href='#'>Home</a>
-        <a href='#'>Explore</a>
-        <a href='#'>Learn</a>
-        <a href='#'>Play</a>
-        <a href='#'>About</a>
-        <a href='#'>Contact</a>
+        <a href='/'>Home</a>
+        <a href='/learn'>Learn</a>
+        <a href='/play'>Play</a>
+        <a href='/about'>About</a>
+        <a href='/contact'>Contact</a>
       </div>
     </div>
   )
