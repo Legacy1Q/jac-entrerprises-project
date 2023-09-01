@@ -7,6 +7,7 @@ import Play from "./Play";
 import Footer from "./Footer";
 import Science from "./Science";
 import About from "./About";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
           <Route path="/">
             <Home />
