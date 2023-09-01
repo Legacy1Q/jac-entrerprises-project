@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./Nav";
 import Home from "./Home";
 import Learn from "./Learn";
+import Play from "./Play";
 import Footer from "./Footer";
 import Science from "./Science";
 
@@ -12,12 +13,15 @@ function App() {
       <Router>
         <Nav />
         <Switch>
-        <Route path="/science">
+          <Route path="/science">
             <Science />
-        </Route>
-        <Route path="/learn">
+          </Route>
+          <Route path="/learn">
             <Learn />
-        </Route>
+          </Route>
+          <Route path="/play">
+            <Play />
+          </Route>
           <Route path="/">
             <Home />
           </Route>
