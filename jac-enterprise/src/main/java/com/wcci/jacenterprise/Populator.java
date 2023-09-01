@@ -16,8 +16,20 @@ public class Populator implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Developer developer = new Developer("Rheeze", "Kalahi", null, null);
-        developerRepository.save(developer);
+        Developer rheeze = new Developer("Rheeze", "Kalahi", "https://rheeze-dev.github.io/img/profile.jpg", "https://rheeze-dev.github.io/");
+        developerRepository.save(rheeze);
+
+        Developer mike = new Developer("Mike", "Sims", "https://mike.github.io/img/profile.jpg", "https://mike.github.io/");
+        developerRepository.save(mike);
+
+        Developer ashley = new Developer("Ashley", "B", "https://ashley.github.io/img/profile.jpg", "https://ashley.github.io/");
+        developerRepository.save(ashley);
+
+        Developer emily = new Developer("Emily", "Leinenbach", "https://emily.github.io/img/profile.jpg", "https://emily.github.io/");
+        developerRepository.save(emily);
+
+        Developer nik = new Developer("Nik", "Bradshaw", "https://nik.github.io/img/profile.jpg", "https://nik.github.io/");
+        developerRepository.save(nik);
 
     }
 }

@@ -6,6 +6,7 @@ import Learn from "./Learn";
 import Play from "./Play";
 import Footer from "./Footer";
 import Science from "./Science";
+import About from "./About";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/play">
             <Play />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
           <Route path="/">
             <Home />
