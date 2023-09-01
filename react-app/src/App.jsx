@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import React from 'react';
+import EventList from './EventList';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +33,17 @@ function App() {
       </p>
     </>
   )
+
+function App() {
+    const [count, setCount] = useState(0)
+  
+    return (
+      <div className="App">
+      <EventList />
+    </div>
+  );
+};
+
 }
 
 export default App
