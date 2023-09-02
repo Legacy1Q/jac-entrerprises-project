@@ -2,11 +2,15 @@ import React from "react";
 
 import Swal from "sweetalert2";
 
-import { DevelopersContext } from "../context/DevelopersContext";
-import { useContext } from "react";
+// import { DevelopersContext } from "../context/DevelopersContext";
+// import { useContext } from "react";
 
 export default function DeleteDeveloper({ user }) {
-  const { developers, setDevelopers } = useContext(DevelopersContext);
+  // const { developers, setDevelopers } = useContext(DevelopersContext);
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
 
   const handleDelete = async (id) => {
     // console.log(id);
@@ -31,12 +35,13 @@ export default function DeleteDeveloper({ user }) {
           if (!response.ok) {
             throw new Error("Something went wrong!");
           }
-          const data = response.json();
-          setDevelopers(data);
+          // const data = response.json();
+          // setDevelopers(data);
         } catch (error) {
           console.log(error);
         }
-        Swal.fire("Deleted!", "Your file has been deleted.", "success");
+        // Swal.fire("Deleted!", "Your file has been deleted.", "success");
+        refreshPage();
       }
     });
   };
@@ -44,11 +49,11 @@ export default function DeleteDeveloper({ user }) {
   const { id, firstName, lastName, picture, bio } = user;
   return (
     <div>
-      <h1>{id}</h1>
-      <h1>{firstName}</h1>
-      <h1>{lastName}</h1>
-      <h1>{picture}</h1>
-      <h1>{bio}</h1>
+      <h1>ID: {id}</h1>
+      <h1>First name: {firstName}</h1>
+      <h1>Last name: {lastName}</h1>
+      <h1>Picture: {picture}</h1>
+      <h1>Bio: {bio}</h1>
       <button
         onClick={() => {
           handleDelete(id);
