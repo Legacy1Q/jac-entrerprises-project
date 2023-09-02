@@ -4,13 +4,17 @@ const Details = ({ country, clicked }) => {
   if (clicked) {
     return (
       <div className="details">
-        <div style={{ display: "flex", gap: "10px" }}>
+        <div>
           <p>
             <span>Official name : </span>
             {country.name.official}{" "}
           </p>
-          <img src={country.flags.png} alt="flag"></img>
         </div>
+        <center>
+          <div>
+            <img src={country.flags.png} alt="flag"></img>
+          </div>
+        </center>
         <p>
           <span>Capital : </span>
           {country.capital[0]}{" "}

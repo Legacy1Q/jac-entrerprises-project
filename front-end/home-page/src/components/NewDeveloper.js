@@ -92,15 +92,15 @@ export default function NewDeveloper() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  // };
 
   return (
     <div>
       <br />
       <br />
-      <form onSubmit={handleSubmit}>
+      <form>
         <input type="text" placeholder="Id" value={id} onChange={handleId} />
         <input
           type="text"
@@ -132,9 +132,7 @@ export default function NewDeveloper() {
 
       <br />
       <br />
-      <br />
-      <br />
-      <br />
+      <hr></hr>
     </div>
   );
 }
